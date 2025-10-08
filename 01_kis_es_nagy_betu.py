@@ -1,11 +1,15 @@
-"""Írasd ki egy adott szám szorzótábláját 1-től 10-ig. Például,
- ha a felhasználó 5-öt ad meg, akkor az eredmény legyen:
-5 x 1 = 5
-5 x 2 = 10
-...
-5 x 10 = 50
+"""1️⃣ Kis- és nagybetűssé alakítás – névformázás
+Feladat: Kérj be egy felhasználónevet a regisztrációhoz, majd jelenítsd meg háromféleképpen:
+nagybetűs (pl. címkén vagy azonosítóban),   
+kisbetűs (pl. email összehasonlításhoz)
+csak az első betű nagy (személyes üdvözlésnél).
 """
 
-szam = int(input("Adj meg egy számot: "))
-for i in range(1, 11):
-    print(f"{szam} x {i} = {szam * i}")
+user = input("Please give me your username: ")
+
+uppercase = user.capitalize()
+print (uppercase)
+lowercase = user.lower()
+print (lowercase)
+allcap = user.upper()
+print (allcap)
